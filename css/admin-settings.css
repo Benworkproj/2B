@@ -1,0 +1,310 @@
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar{
+	width: 0px;
+}
+
+/*----------------------------------------------- CSS of the Logo CvSU-IMUS ADMISSION Admin Portal -----------------------------------------------*/
+.top-left{
+	background-color: #2a363e; color: white; box-shadow: 0px 5px 15px black; z-index: 2; 
+}
+
+.top-left img{
+	margin: 10px 40px; 
+}
+
+.top-right{
+	box-shadow: 0px 5px 15px black; z-index: 1;
+}
+
+/*---------------------------------------------------------------- CSS of the side bar --------------------------------------------------------------*/
+.bottom-left{
+	background-color: #2a363e; height: 89vh; overflow-y: scroll; box-shadow: 0px 5px 15px black; z-index: 1; color: white;
+}
+
+.bottom-left::-webkit-scrollbar{
+	width: 0px;
+}
+
+.navigation-head i{
+	font-size: 20px; background-color: white; padding: 7px 10px; display: none; border-radius: 50%;
+}
+
+.navigation-head i:hover{
+	background-color: yellow;
+}
+
+.navigation-head hr, .navigation-head h3{
+	display: none;
+}
+
+.navigation-list{
+	margin-left: -20px;
+}
+
+.navigation-list a{
+	font-size: 18px; color: white; text-decoration: none;
+}
+
+.navigation-list ul li{
+	list-style-type: none; line-height: 55px; margin: 5px 0px;
+}
+
+.navigation-list ul li:hover{
+	background-color: white; color: #2a363e;
+}
+
+.navigation-list ul li.active{
+	background-color: white; color: #2a363e;
+}
+
+.navigation-list ul li i{
+	margin-left: 10px; margin-right: 15px; 
+}
+
+.dropdown i{
+	margin-left: 5px;
+}
+
+.sub-menu{
+	display: none; margin-top: 15px; margin-bottom: -10px; 
+}
+
+.sub-menu a li{
+	margin-top: -10px;
+}
+
+.sub-menu p{
+	margin-left: 45px; line-height: 40px;
+}
+
+.rotate{
+	transform: rotate(180deg); transition: 0.3s ease;
+}
+
+/*----------------------------------------------------------------------- CSS of Header -----------------------------------------------------------------------*/
+
+.log-out i{
+	font-size: 25px; text-align: center; margin-top: 15px; margin-left: -33px; background-color: #DF2C14; padding: 10px 13px; border-radius: 50%;
+}
+
+.log-out i:hover{
+	background-color: yellow;
+}
+
+.logo{
+	display: none;
+}
+
+/*-------------------------------------------------------------- Main Content CSS --------------------------------------------------------------*/
+
+.bottom-right{
+	background-color: #FBFAF2; height: 89vh; overflow-y: scroll;
+}
+
+.bottom-right::-webkit-scrollbar{
+	width: 0px;
+}
+
+.content{
+	margin-top: 30px; font-size: 20px;
+}
+
+.content i{
+	margin: 0px 10px;
+}
+
+.content span{
+	font-weight: bold; letter-spacing: 1px;
+}
+
+.content p{
+	margin-left: 10px; margin-top: 5px; font-size: 15px; letter-spacing: 1px;
+}
+*
+
+.content hr{
+	border: 2px solid gray;
+}
+
+.account-details h6{
+	letter-spacing: 1px;
+}
+
+.account-details p{
+	font-size: 15px;
+}
+
+
+
+/*---------------------------------------------------------------------- Modal Design ----------------------------------------------------------------------*/
+.modal::-webkit-scrollbar{
+	width: 0px;
+}
+
+.modal-header{
+	background-color: #00c866;
+}
+
+.form-label, .form-check-label{
+	font-size: 18px;
+}
+
+.input-group-append {
+  cursor: pointer;
+}
+
+.modal-body{
+	overflow-y: scroll; height: 30rem;
+}
+
+.modal-footer i{
+	margin-left: -3px;
+}
+
+.required:after{
+	content: "*"; color: red;
+}
+
+/*-------------------------------------- To adjust the design of the website based on the max width of the screen --------------------------------------*/
+@media screen and (max-width: 1400px){
+	.top-left img{
+		margin: 10px 18px;
+	}
+}
+
+@media screen and (max-width: 1350px){
+	.navigation-list a{
+		font-size: 14px; letter-spacing: 0px;
+	}
+
+	.navigation-list ul li{
+		line-height: 50px;
+	}
+
+}
+
+@media screen and (max-width: 1300px){
+	.top-left img{
+		margin: 10px 10px;
+	}
+}
+
+@media screen and (max-width: 1300px){
+	.top-left img{
+		margin: 10px 10px;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.top-left img{
+		margin: 10px 10px 10px 0px;
+	}
+}
+
+@media screen and (max-width: 1130px){
+	.top-left{
+		display: none;
+	}
+
+	.bottom-left{
+		display: none;
+	}
+
+	.navigation-head {
+		margin-top: 20px;
+	}
+
+	.navigation-head i, .navigation-head hr, .navigation-head h3{
+		display: block;
+	}
+
+	.bottom-left.active{
+		display: block; width: 300px; position: fixed; margin-top: 70px;
+	}
+
+	.top-right{
+		width: 100%; height: 70px; position: fixed; top: 0px;
+	}
+
+	.top-right-cont{
+		margin-top: 0px;
+	} 
+
+	.bottom-right{
+		width: 100%; margin-top: 70px;
+	}
+
+	.logo{
+		display: block;
+	}
+
+	.logo i{
+		font-size: 25px; padding: 22px 20px; background: rgba(255, 255, 255, .4	);; margin-left: -12px;
+	}
+
+	.logo img{
+		margin-top: -5px; margin-left: 10px;
+	}
+
+	.log-out i{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 720px){
+	.top-left img{
+		margin: 10px 10px 10px 0px;
+	}
+}
+
+@media screen and (max-width: 426px){
+	.content{
+		font-size: 15px;
+	}
+
+	.content p{
+		font-size: 10px;
+	}
+
+	.logo i{
+		font-size: 20px; padding: 25px 20px;
+	}
+
+	.logo img{
+		width: 50px; height: 40px;
+	}
+
+	.log-out i{
+		margin-left: -45px; font-size: 15px;
+	}
+
+	#mail,#ssap{
+		overflow-x: scroll;
+	}
+
+	#mail::-webkit-scrollbar, #ssap::-webkit-scrollbar{
+		height: 0px;
+	}
+
+	.account-details p{
+		font-size: 15px;
+	}
+
+	.form-label, .form-check-label, .form-select{
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 376px){
+
+	.account-details h6{
+		font-size: 13px;
+	}
+
+	.account-details p{
+		font-size: 13px;
+	}
+}
